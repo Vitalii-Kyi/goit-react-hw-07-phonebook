@@ -1,13 +1,13 @@
 import { HIPhoneOutline } from '@icongo/hi/lib/HIPhoneOutline';
-// import { HiMicrophone } from 'react-icons/hi';
 import { useDispatch } from 'react-redux';
-import { deleteContact } from 'redux/contactsSlice';
+// import { deleteContact } from 'redux/contactsSlice';
+import { fetchDeleteContact } from 'redux/operations';
 
 export const ContactItem = ({ contact }) => {
   const { id, name, number } = contact;
   const dispatch = useDispatch();
 
-  const onContactDelete = () => dispatch(deleteContact(id));
+  const onContactDelete = () => dispatch(fetchDeleteContact(id));
 
   return (
     <>

@@ -1,11 +1,11 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { searchFilter } from 'redux/filterSlice';
-import { getFilter } from 'redux/selectors';
+import { selectFilter } from 'redux/selectors';
 import { Search } from './Filter.styled';
 
 export const Filter = () => {
   const dispatch = useDispatch();
-  const filter = useSelector(getFilter);
+  const filter = useSelector(selectFilter);
 
   const onChangeFilter = newSymbol => {
     dispatch(searchFilter(newSymbol));
