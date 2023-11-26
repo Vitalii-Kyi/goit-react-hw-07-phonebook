@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const List = styled.ul`
   width: 100%;
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 12px;
   margin: auto;
@@ -10,11 +11,12 @@ export const List = styled.ul`
 
   li {
     display: flex;
+    width: 320px;
     justify-content: center;
     align-items: center;
     color: #000000;
     padding: 2px;
-    padding-left: 8px;
+    /*padding-left: 8px;*/
     
     span {
       font-size: 16px;
