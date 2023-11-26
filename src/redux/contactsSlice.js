@@ -46,10 +46,6 @@ const handleRejected = (state, action) => {
 };
 
 const handleAddFulfilled = (state, action) => {
-  // state.isLoading = false;
-  // state.error = null;
-  // state.items.push(action.payload);
-
   toast.dismiss(toastLoading);
   toast.success('Contact is added!', {
     duration: 2800,
