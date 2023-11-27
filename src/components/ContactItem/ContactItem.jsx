@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { fetchDeleteContact } from 'redux/operations';
 
 export const ContactItem = ({ contact }) => {
-  const { id, name, number } = contact;
+  const { id, name, phone } = contact;
   const dispatch = useDispatch();
 
   const onContactDelete = () => dispatch(fetchDeleteContact(id));
@@ -13,7 +13,7 @@ export const ContactItem = ({ contact }) => {
       <HIPhoneOutline />
       <span>{name}</span>
       <div>
-        <span>{number} </span>
+        <span>{phone} </span>
         <button type="button" onClick={onContactDelete}>
           Delete
         </button>
