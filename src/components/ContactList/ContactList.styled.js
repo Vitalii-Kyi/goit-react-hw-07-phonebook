@@ -10,13 +10,12 @@ export const List = styled.ul`
 
   li {
     display: flex;
-    /*width: 320px;*/
     justify-content: center;
     align-items: center;
     color: #000000;
     padding: 2px;
     padding-left: 8px;
-    
+
     span {
       font-size: 16px;
       font-weight: 600;
@@ -24,7 +23,6 @@ export const List = styled.ul`
       font-style: normal;
       margin-right: auto;
       margin-bottom: 4px;
-      
     }
 
     div {
@@ -32,15 +30,15 @@ export const List = styled.ul`
       align-items: center;
     }
 
-    /*div span {
-        color: #000000;
-    }*/
+    div span {
+      color: #000000;
+    }
 
     button {
       height: 24px;
       font-size: 12px;
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
+        'Lucida Sans', Arial, sans-serif;
       margin-left: 36px;
       padding: 2px 8px;
       color: #000000;
@@ -52,7 +50,6 @@ export const List = styled.ul`
         background-color: #ff7e6b;
         color: white;
         transform: scale(1.2);
-        }
       }
     }
   }
